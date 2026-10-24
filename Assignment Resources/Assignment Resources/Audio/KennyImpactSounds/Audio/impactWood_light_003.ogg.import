@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://blaqnaddwi0el"
+path="res://.godot/imported/impactWood_light_003.ogg-2fc0742ab8d48a09b2fd3ccc9202bbe1.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assignment Resources/Assignment Resources/Audio/KennyImpactSounds/Audio/impactWood_light_003.ogg"
+dest_files=["res://.godot/imported/impactWood_light_003.ogg-2fc0742ab8d48a09b2fd3ccc9202bbe1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

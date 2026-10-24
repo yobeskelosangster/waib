@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cjrdeehwpqndj"]
+
+[ext_resource type="Texture2D" uid="uid://de7jos70mwc8e" path="res://Assignment Resources/Assignment Resources/UI/KennyUIPack/UI Textures/grey_tickGrey.png" id="1_1gcqp"]
+[ext_resource type="Script" uid="uid://25r7n0357sel" path="res://scripts/joystick.gd" id="2_ojhyh"]
+[ext_resource type="Texture2D" uid="uid://iidjgk2jwd5k" path="res://Assignment Resources/Assignment Resources/UI/KennyUIPack/UI Textures/grey_tickWhite.png" id="2_qaoo7"]
+[ext_resource type="Texture2D" uid="uid://pxl6eihde6i2" path="res://Assignment Resources/Assignment Resources/UI/KennyUIPack/UI Textures/red_button04.png" id="3_ep0mg"]
+[ext_resource type="Script" uid="uid://b217wvuj7asqp" path="res://fire_button.gd" id="5_qpxdh"]
+
+[node name="TouchControls" type="Control" unique_id=2088277839]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="JoystickBase" type="TextureRect" parent="." unique_id=1816470354]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -300.0
+offset_right = 300.0
+grow_vertical = 0
+offset_transform_enabled = true
+texture = ExtResource("1_1gcqp")
+expand_mode = 1
+script = ExtResource("2_ojhyh")
+
+[node name="JoystickKnob" type="TextureRect" parent="JoystickBase" unique_id=1214917942]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 90.0
+offset_right = 210.0
+offset_bottom = 210.0
+texture = ExtResource("2_qaoo7")
+expand_mode = 1
+
+[node name="FireButton" type="TextureButton" parent="." unique_id=602165689]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -200.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("3_ep0mg")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_qpxdh")

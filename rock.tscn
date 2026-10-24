@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dsq03s2oxdb1i"]
+
+[ext_resource type="PackedScene" uid="uid://uhpy5cok53s2" path="res://Assignment Resources/Assignment Resources/Environment/Environment/Environment/GLTF/Rock_Large_1.gltf" id="1_o0qsl"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vun6o"]
+radius = 2.5
+
+[node name="Rock" type="StaticBody3D" unique_id=956162860 groups=["obstacle"]]
+
+[node name="Rock_Large_12" parent="." unique_id=1940783345 instance=ExtResource("1_o0qsl")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1295599304]
+shape = SubResource("SphereShape3D_vun6o")

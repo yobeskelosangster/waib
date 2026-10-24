@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://ckkfj0krus05"]
+
+[ext_resource type="Script" uid="uid://334cvqbn0bs3" path="res://scene/test_level.gd" id="1_4p577"]
+[ext_resource type="PackedScene" uid="uid://bmciv841tfr5l" path="res://scene/player.tscn" id="1_ytw46"]
+[ext_resource type="PackedScene" uid="uid://6jch758yxaff" path="res://scene/laser.tscn" id="2_ow80b"]
+[ext_resource type="PackedScene" uid="uid://cjrdeehwpqndj" path="res://touch_controls.tscn" id="3_ow80b"]
+[ext_resource type="PackedScene" uid="uid://dgya744n7mcpe" path="res://hub.tscn" id="4_q0q7k"]
+[ext_resource type="PackedScene" uid="uid://uhpy5cok53s2" path="res://Assignment Resources/Assignment Resources/Environment/Environment/Environment/GLTF/Rock_Large_1.gltf" id="6_orgbn"]
+[ext_resource type="PackedScene" uid="uid://d07yc4ugvjvop" path="res://Assignment Resources/Assignment Resources/Environment/Environment/Environment/GLTF/Rock_Large_2.gltf" id="7_8mqoh"]
+[ext_resource type="PackedScene" uid="uid://bb3yhvdtrnaew" path="res://Assignment Resources/Assignment Resources/Environment/Environment/Environment/GLTF/Rock_Large_3.gltf" id="8_dfoqk"]
+[ext_resource type="PackedScene" uid="uid://dy8fhoslxck2d" path="res://Assignment Resources/Assignment Resources/Environment/Environment/Environment/GLTF/Planet_1.gltf" id="9_dfoqk"]
+[ext_resource type="PackedScene" uid="uid://dsq03s2oxdb1i" path="res://rock.tscn" id="10_wrak7"]
+[ext_resource type="PackedScene" uid="uid://btyc66y0yfecx" path="res://scene/game_over.tscn" id="11_65udq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vun6o"]
+
+[sub_resource type="Environment" id="Environment_wrak7"]
+background_mode = 1
+background_color = Color(0.043137256, 0.11764706, 0.35686275, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0, 0, 0.4392157, 1)
+fog_enabled = true
+fog_light_color = Color(0.043137256, 0.11764706, 0.35686275, 1)
+fog_density = 0.002
+
+[node name="Node3D" type="Node3D" unique_id=590578516]
+script = ExtResource("1_4p577")
+
+[node name="player" parent="." unique_id=1951392207 instance=ExtResource("1_ytw46")]
+
+[node name="LaserSpawn2" type="Marker3D" parent="player" unique_id=444713017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=130628580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -20)
+mesh = SubResource("BoxMesh_vun6o")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1872360906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 2, -40)
+mesh = SubResource("BoxMesh_vun6o")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=41760770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, -60)
+mesh = SubResource("BoxMesh_vun6o")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1038922648]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 4, -80)
+mesh = SubResource("BoxMesh_vun6o")
+
+[node name="Laser" parent="." unique_id=296821680 instance=ExtResource("2_ow80b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1357021029]
+
+[node name="TouchControls" parent="CanvasLayer" unique_id=2088277839 instance=ExtResource("3_ow80b")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=228640032]
+transform = Transform3D(0.8660254, 0.35355338, -0.35355338, 0, 0.70710677, 0.70710677, 0.5, -0.6123724, 0.6123724, 0, 0, 0)
+
+[node name="HUD" parent="." unique_id=852262219 instance=ExtResource("4_q0q7k")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=430755726]
+environment = SubResource("Environment_wrak7")
+
+[node name="Rock_Large_12" parent="." unique_id=1940783345 instance=ExtResource("6_orgbn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 5, -80)
+
+[node name="Rock_Large_13" parent="." unique_id=1516654860 instance=ExtResource("6_orgbn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, -10, -140)
+
+[node name="Rock_Large_14" parent="." unique_id=943084237 instance=ExtResource("6_orgbn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 50, -700)
+
+[node name="Rock_Large_22" parent="." unique_id=1003534802 instance=ExtResource("7_8mqoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -119, -620)
+
+[node name="Rock_Large_32" parent="." unique_id=909211481 instance=ExtResource("8_dfoqk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.818, 39, -580)
+visible = false
+
+[node name="Rock_Large_33" parent="." unique_id=749426932 instance=ExtResource("8_dfoqk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -91, -120)
+
+[node name="Rock_Large_23" parent="." unique_id=902306107 instance=ExtResource("7_8mqoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 21, -300)
+
+[node name="Rock_Large_15" parent="." unique_id=207170444 instance=ExtResource("6_orgbn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 14, 134)
+
+[node name="Rock_Large_16" parent="." unique_id=679389005 instance=ExtResource("6_orgbn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -190)
+
+[node name="Planet_12" parent="." unique_id=821900412 instance=ExtResource("9_dfoqk")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 150, 40, -700)
+
+[node name="Rock" parent="." unique_id=956162860 instance=ExtResource("10_wrak7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 5, 966)
+
+[node name="Rock2" parent="." unique_id=26874687 instance=ExtResource("10_wrak7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 10, 5, -80)
+
+[node name="Rock3" parent="." unique_id=1689686848 instance=ExtResource("10_wrak7")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -25, -10, -140)
+
+[node name="Rock4" parent="." unique_id=905911166 instance=ExtResource("10_wrak7")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 30, 15, -200)
+
+[node name="Rock5" parent="." unique_id=1919509980 instance=ExtResource("10_wrak7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 20, -260)
+
+[node name="Rock6" parent="." unique_id=1319120593 instance=ExtResource("10_wrak7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 489, -20, 889)
+
+[node name="GameOver" parent="." unique_id=1630346429 instance=ExtResource("11_65udq")]

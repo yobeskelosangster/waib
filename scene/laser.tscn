@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://6jch758yxaff"]
+
+[ext_resource type="Script" uid="uid://cfj2y5u0t3t5p" path="res://scene/laser.gd" id="1_55k48"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_61cn3"]
+albedo_color = Color(0.24705882, 0.827451, 0.007843138, 1)
+emission_enabled = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_vun6o"]
+size = Vector3(0.1, 0.1, 2)
+
+[node name="Laser" type="Node3D" unique_id=296821680]
+script = ExtResource("1_55k48")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1512097160]
+material_override = SubResource("StandardMaterial3D_61cn3")
+mesh = SubResource("BoxMesh_vun6o")

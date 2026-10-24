@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cnq5ps2gmhvyl"
+path="res://.godot/imported/House_Single_Support.obj-e0da701eef96c09ee14ed283806df26f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/House_Single_Support.obj-e0da701eef96c09ee14ed283806df26f.mesh"]
+
+source_file="res://Assignment Resources/Assignment Resources/Environment/Environment/Environment/OBJ/House_Single_Support.obj"
+dest_files=["res://.godot/imported/House_Single_Support.obj-e0da701eef96c09ee14ed283806df26f.mesh", "res://.godot/imported/House_Single_Support.obj-e0da701eef96c09ee14ed283806df26f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bmciv841tfr5l"]
+
+[ext_resource type="Script" uid="uid://dcslntdi3l48y" path="res://scripts/player.gd" id="1_hjaqi"]
+[ext_resource type="PackedScene" uid="uid://djsh0g5ajct5b" path="res://Assignment Resources/Assignment Resources/Space Ships/Spitfire/Spitfire/FBX/Spitfire.fbx" id="1_xo3ru"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ow80b"]
+albedo_color = Color(0.8375283, 0.19454163, 0.28800347, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_61cn3"]
+radius = 1.3
+
+[node name="player" type="CharacterBody3D" unique_id=1951392207]
+script = ExtResource("1_hjaqi")
+
+[node name="Spitfire" parent="." unique_id=1237916183 instance=ExtResource("1_xo3ru")]
+transform = Transform3D(-0.2, 0, -1.7484556e-08, 0, 0.2, 0, 1.7484556e-08, 0, -0.2, 0, 0, 0)
+
+[node name="Spitfire" parent="Spitfire" index="0" unique_id=2076397026]
+surface_material_override/0 = SubResource("StandardMaterial3D_ow80b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=514113967]
+shape = SubResource("SphereShape3D_61cn3")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=671177810]
+transform = Transform3D(1, 0, 0, 0, 0.9848077, 0.17364818, 0, -0.17364818, 0.9848077, 0, 1.5, 3)
+
+[node name="LaserSpawn" type="Marker3D" parent="." unique_id=1370146519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[editable path="Spitfire"]

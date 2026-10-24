@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c20iamp3y13j"
+path="res://.godot/imported/impactGlass_medium_000.ogg-dd097b3bdef0a4e830163ffc226c4bc8.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assignment Resources/Assignment Resources/Audio/KennyImpactSounds/Audio/impactGlass_medium_000.ogg"
+dest_files=["res://.godot/imported/impactGlass_medium_000.ogg-dd097b3bdef0a4e830163ffc226c4bc8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,8 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot temporary and generated files
+.export/
+*.tmp
+*.bak

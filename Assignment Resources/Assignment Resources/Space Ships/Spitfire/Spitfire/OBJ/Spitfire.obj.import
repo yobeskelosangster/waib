@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dots8jnkfn81t"
+path="res://.godot/imported/Spitfire.obj-ede16fcef027facf6b7367e9b3d58494.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Spitfire.obj-ede16fcef027facf6b7367e9b3d58494.mesh"]
+
+source_file="res://Assignment Resources/Assignment Resources/Space Ships/Spitfire/Spitfire/OBJ/Spitfire.obj"
+dest_files=["res://.godot/imported/Spitfire.obj-ede16fcef027facf6b7367e9b3d58494.mesh", "res://.godot/imported/Spitfire.obj-ede16fcef027facf6b7367e9b3d58494.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

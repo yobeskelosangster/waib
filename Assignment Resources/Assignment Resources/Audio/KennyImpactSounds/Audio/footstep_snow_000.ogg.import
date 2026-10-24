@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ca1wihny4f12a"
+path="res://.godot/imported/footstep_snow_000.ogg-b73feed41c4a4d255397b929ef0046e2.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assignment Resources/Assignment Resources/Audio/KennyImpactSounds/Audio/footstep_snow_000.ogg"
+dest_files=["res://.godot/imported/footstep_snow_000.ogg-b73feed41c4a4d255397b929ef0046e2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

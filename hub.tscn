@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dgya744n7mcpe"]
+
+[ext_resource type="Script" uid="uid://jedqel68wwya" path="res://hub.gd" id="1_l10or"]
+
+[node name="HUB" type="CanvasLayer" unique_id=852262219]
+script = ExtResource("1_l10or")
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=216227087]
+custom_minimum_size = Vector2(300, 30)
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 320.0
+offset_bottom = 50.0
+value = 100.0

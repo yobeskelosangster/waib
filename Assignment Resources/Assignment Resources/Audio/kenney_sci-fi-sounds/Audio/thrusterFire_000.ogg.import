@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btont0cw0nlbe"
+path="res://.godot/imported/thrusterFire_000.ogg-fc426d3d2fe5e99e27f0346fb8c90798.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assignment Resources/Assignment Resources/Audio/kenney_sci-fi-sounds/Audio/thrusterFire_000.ogg"
+dest_files=["res://.godot/imported/thrusterFire_000.ogg-fc426d3d2fe5e99e27f0346fb8c90798.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
